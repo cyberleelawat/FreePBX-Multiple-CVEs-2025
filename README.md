@@ -41,6 +41,98 @@ These templates detect vulnerable FreePBX instances by:
 
 The detection is non-invasive and does not attempt to exploit the vulnerabilities.
 
+## Search Dorks for Identifying Vulnerable FreePBX Instances
+#### all CVEs Shodan and hunter dorks
+
+##### Shodan
+```
+http.title:"FreePBX Administration"
+```
+
+##### Hunter
+```
+product.name="FreePBX Console"
+```
+
+#### 🔴 CVE-2025-66039 – FreePBX (Improper Access Control)
+🌐 Google Dorks
+```
+intitle:"FreePBX Administration"
+"FreePBX" "Administration"
+inurl:/admin/config.php "FreePBX"
+```
+
+🔍 Shodan
+```
+http.title:"FreePBX"
+http.html:"FreePBX Administration"
+product:"FreePBX"
+```
+
+🛰️ FOFA
+```
+title="FreePBX"
+body="FreePBX Administration"
+app="FreePBX"
+```
+
+👁️ ZoomEye
+```
+app:"FreePBX"
+title:"FreePBX"
+```
+
+#### 🔴 CVE-2025-61678 – FreePBX (Input Validation Issue)
+🌐 Google Dorks
+```
+"FreePBX" "User Control Panel"
+inurl:/ucp/login
+"FreePBX" "UCP"
+```
+
+🔍 Shodan
+```
+http.html:"User Control Panel"
+http.html:"FreePBX"
+```
+
+🛰️ FOFA
+```
+body="User Control Panel"
+body="FreePBX"
+```
+
+👁️ ZoomEye
+```
+app:"FreePBX"
+body:"User Control Panel"
+```
+
+#### 🔴 CVE-2025-61675 – FreePBX (User Input Handling)
+🌐 Google Dorks
+```
+inurl:/admin "FreePBX"
+inurl:/recordings "FreePBX"
+"FreePBX" "Dashboard"
+```
+
+🔍 Shodan
+```
+http.html:"FreePBX Dashboard"
+http.favicon.hash:-1238045827
+```
+
+🛰️ FOFA
+```
+body="FreePBX Dashboard"
+icon_hash="-1238045827"
+```
+
+👁️ ZoomEye
+```
+app:"FreePBX"
+body:"Dashboard"
+```
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" width="25" height="25" /> How do I run this script?
 
