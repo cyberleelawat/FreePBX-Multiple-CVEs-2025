@@ -170,6 +170,11 @@ nuclei -u https://example.com -t CVE-2025-66039.yaml
 ```
 nuclei -l subdomain.txt -t CVE-2025-66039.yaml
 ```
+#### Run all templates
+```
+nuclei -u https://example.com -t .
+```
+
 ### Example Output
 
 ```
