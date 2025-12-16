@@ -44,9 +44,12 @@ The detection is non-invasive and does not attempt to exploit the vulnerabilitie
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" width="25" height="25" /> How do I run this script?
 
-1. Download and install [Nuclei](https://github.com/projectdiscovery/nuclei).
-2. Clone this repository to your local system.
-3. Run a single template:
+#### Installation (One Command!)
+
+```
+git clone https://github.com/cyberleelawat/FreePBX-Multiple-CVEs-2025.git
+cd FreePBX-Multiple-CVEs-2025
+```
 
 #### Authenticated SQL Injection 
 
@@ -96,3 +99,7 @@ nuclei -l subdomain.txt -t CVE-2025-66039.yaml
 Use at your own risk, I will not be responsible for illegal activities you conduct on infrastructure you do not own or have permission to scan.
 
 ---
+
+#### Create By : **Virendra Kumar**
+#### Organization : **Cyber Leelawat**
+#### Website : https://cyberleelawat.vercel.app
